@@ -1,0 +1,16 @@
+{
+  "name": "Unsubscriber",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Making unsubscription easier",
+  "permissions": [
+    "http://*/*", "https://*/*",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/mail/*"],
+      "js": ["jquery-1.9.1.js", "gmail.js"]
+    }
+  ]
+}
